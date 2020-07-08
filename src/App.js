@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Counter from './components/Counter';
+import Counter2 from './components/Counter2';
+import ParentComponent from './components/ParentComponent';
+import Condintional from './components/Condintional';
+import NameList from './components/NameList';
+import Form from './components/Form';
+import ParentCom from './components/ParentCom';
+import RefsDemo from './components/RefsDemo';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Counter/>
+      <Counter2/> */}
+      {/* <ParentComponent/> */}
+      {/* <Condintional/> */}
+      {/* <NameList/> */}
+      {/* <Form/> */}
+     {/* <ParentCom/> */}
+     {/* <RefsDemo/> */}
+     {/* <PortalDemo/> */}
+     <ErrorBoundary>
+     <Hero heroName='Batman'/>
+     <Hero heroName='Superman'/>
+     <Hero heroName='Joker'/>
+     </ErrorBoundary>
     </div>
   );
 }
